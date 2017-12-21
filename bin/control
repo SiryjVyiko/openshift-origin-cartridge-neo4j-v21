@@ -31,6 +31,7 @@ function status() {
 }
 
 function start() {
+    return 0;
     if (is_running); then
 	echo "Neo4J server is already started";
         exit 0
