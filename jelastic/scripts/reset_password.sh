@@ -8,6 +8,7 @@ SED=$(which sed);
 #$J_OPENSHIFT_APP_ADM_PASSWORD    ;   Use this varible for your password
 
 function _setPassword() {
+	return 0;
 	if [ -f /opt/repo/versions/${Version}/neo4j-${Version}/data/dbms/auth ]; then
 		generateAuthString $J_OPENSHIFT_APP_ADM_USER $J_OPENSHIFT_APP_ADM_PASSWORD;
 	else
